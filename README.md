@@ -1,11 +1,11 @@
 # Lightweight PHP-FPM & Nginx Docker Image for WordPress
-[![devgeniem/alpine-wordpress docker image](http://dockeri.co/image/devgeniem/wordpress-server)](https://registry.hub.docker.com/u/devgeniem/wordpress-server/)
+[![alexsancho/alpine-wordpress docker image](http://dockeri.co/image/alexsancho/wordpress-server)](https://registry.hub.docker.com/u/alexsancho/wordpress-server/)
 
 [![License](https://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 This is maintained repository. We use this project in production and recommend this for your projects too. This container doesn't have mysql or email, you need to provide them from elsewhere. This can be other container or your host machine.
 
-I tried to include all build, test and project tools in [docker-alpine-wordpress](https://github.com/devgeniem/docker-alpine-wordpress) image. I think that more modular design is better for docker and security as well.
+I tried to include all build, test and project tools in [docker-alpine-wordpress](https://github.com/alexsancho/docker-alpine-wordpress) image. I think that more modular design is better for docker and security as well.
 
 This project tries to be as minimal as possible and doesn't include anything that we don't absolutely need in the runtime.
 
@@ -47,7 +47,7 @@ You can have custom nginx includes in your project mount `/var/www/project/nginx
 **Include into server {} block:**
 `/var/www/project/nginx/server/*.conf`
 
-See more in our [wp-project template](https://github.com/devgeniem/wp-project).
+See more in our [wp-project template](https://github.com/alexsancho/wp-project).
 
 ## Cron jobs
 You can place cron file in `/var/www/project/tasks.cron`. This is symlinked to crond and run as user `wordpress`.

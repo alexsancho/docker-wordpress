@@ -26,8 +26,6 @@ function render_env_tmpl() {
 
 echo "[cont-init.d] Substituting env into configuration files..."
 
-echo $PORT
-
 ##
 # Nginx doesn't support env variables in config files so we will have to do this in hacky way instead
 ##

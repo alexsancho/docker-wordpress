@@ -1,5 +1,9 @@
 #!/usr/bin/with-contenv bash
 
+# Create web root directory if not exists
+mkdir -p $WEB_ROOT
+chown $WEB_USER:$WEB_GROUP $WEB_ROOT
+
 # Create uploads directory if not exists
 mkdir -p $UPLOADS_ROOT
 chown $WEB_USER:$WEB_GROUP $UPLOADS_ROOT

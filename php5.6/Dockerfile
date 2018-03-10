@@ -1,5 +1,5 @@
 FROM alpine:edge
-MAINTAINER Onni Hakala - Geniem Oy. <onni.hakala@geniem.com>
+MAINTAINER Alex Sancho <asancho@keclab.com>
 
 # Install dependencies and small amount of devtools
 RUN apk add --update curl bash nano nginx ca-certificates \

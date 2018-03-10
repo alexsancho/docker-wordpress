@@ -1,4 +1,6 @@
-#!/usr/bin/with-contenv sh
+#!/usr/bin/with-contenv bash
+
+echo "[services.d] started nginx"
 
 # Run nginx always in foreground
 exec nginx -g "daemon off;"

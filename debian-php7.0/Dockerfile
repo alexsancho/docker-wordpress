@@ -193,7 +193,8 @@ ENV \
 # Setup $TZ. Remember to run this again in your own build
 RUN dpkg-reconfigure tzdata && \
     # Make sure that all files here have execute permissions
-    chmod +x /etc/cont-init.d/*
+    chmod +x /etc/cont-init.d/* && \
+    chmod +x /etc/init.d/* 
 
 # Set default path to project folder for easier running commands in project
 WORKDIR ${PROJECT_ROOT}
